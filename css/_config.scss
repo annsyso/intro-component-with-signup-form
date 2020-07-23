@@ -1,0 +1,53 @@
+// DEVICES
+
+@mixin desktop {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+// COLORS
+
+$primary-1: hsl(0, 100%, 74%);
+$primary-2: hsl(154, 59%, 51%);
+
+$accent: hsl(248, 32%, 49%);
+
+$dark-neutral: hsl(249, 10%, 26%);
+$light-neutral: hsl(246, 25%, 77%);
+
+// FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$font-weights: (
+    'regular': 400,
+    'medium': 500,
+    'semi': 600,
+    'bold': 700
+);
+
+@function weight ($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+$main-font: 'Poppins', sans-serif;
+
+// RESETS
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}
