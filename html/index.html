@@ -21,12 +21,31 @@
             <div class="banner">
                 <p>Try it free 7 days then $20/mo. thereafter</p>
             </div>
-            <form action="submit">
-                <input type="text" id="fname" value="First Name">
-                <input type="text" id="lname" value="Last Name">
-                <input type="email" id="email" value="Email">
-                <input type="password" id="pword" value="Password">
-                <input type="submit" id="submit" value="Claim Your Free Trial">
+
+            <form>
+              <div class="form-group">
+                <input type="text" name="firstName" id="first-name" value="First Name">
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="lastName" id="last-name" value="Last Name">
+              </div>
+
+              <div class="form-group">
+                <input type="email" name="email" id="email" value="Email">
+              </div>
+
+              <div class="form-group">
+                <input type="password" name="password" id="password" value="Password">
+              </div>
+
+              <button type="submit" class="btn">Claim Your Free Trial</button>
+
+              <p class="bottom-text">
+                By clicking the Sign Up button, you agree to our
+                <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Policy</a>
+              </p>
             </form>
         </div>
     </div>
@@ -36,32 +55,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-<!-- <form>
-    <div class="form-group">
-      <label for="first-name">First Name</label>
-      <input type="text" name="firstName" id="first-name" />
-    </div>
-    <div class="form-group">
-      <label for="last-name">Last Name</label>
-      <input type="text" name="lastName" id="last-name" />
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" />
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" name="password" id="password" />
-    </div>
-    <div class="form-group">
-      <label for="password2">Confirm Password</label>
-      <input type="password" name="pasword2" id="password2" />
-    </div>
-    <button type="submit" class="btn">Sign Up</button>
-    <p class="bottom-text">
-      By clicking the Sign Up button, you agree to our
-      <a href="#">Terms & Conditions</a> and
-      <a href="#">Privacy Policy</a>
-    </p>
-  </form> -->
